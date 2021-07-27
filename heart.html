@@ -1,0 +1,77 @@
+<style>
+  .heart {
+    animation-name: rainbow;
+      animation-duration: 8s;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg); ;
+  }
+  .heart::after {
+    animation-name: heart1;
+      animation-duration: 8s;
+    background-color: red;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 25px;
+
+  }
+  .heart::before {
+    animation-name: heart2;
+      animation-duration: 8s;
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+  }
+
+  @keyframes rainbow{
+    0%{
+      background-color: yellow;
+    }
+    50%{
+      background-color: pink;
+    }
+    100%{
+      background-color: red;
+    }
+}
+@keyframes heart1{
+  0%{
+    background-color: yellow;
+  }
+  50%{
+    background-color: pink;
+  }
+  100%{
+    background-color: red;
+  }
+}
+@keyframes heart2{
+  0%{
+    background-color: yellow;
+  }
+  50%{
+    background-color: pink;
+  }
+  100%{
+    background-color: red;
+  }
+}
+
+</style>
+<div class="heart"></div>
